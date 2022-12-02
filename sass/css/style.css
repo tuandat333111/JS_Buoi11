@@ -1,0 +1,287 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar-menu {
+  position: absolute;
+  z-index: 1;
+  margin: 0 6rem;
+}
+.navbar-menu #navbarNav {
+  margin-left: 15rem;
+}
+.navbar-menu .navbar-brand img {
+  width: 6.5rem;
+  height: 6.5rem;
+}
+.navbar-menu .nav-item {
+  padding: 30px 0;
+  line-height: 38px;
+}
+.navbar-menu .nav-link {
+  color: #181818;
+  margin: 0 25px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+.navbar-menu .nav-link::after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 12px;
+  background-color: rgb(187, 13, 121);
+  border-radius: 50%;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.2s;
+  text-align: center;
+  opacity: 0;
+  top: 100%;
+}
+.navbar-menu .nav-link:hover {
+  color: rgb(187, 13, 121);
+}
+.navbar-menu .nav-link:hover::after {
+  opacity: 1;
+}
+.navbar-menu .phone-button {
+  margin-left: 25px;
+  border: 1px solid rgb(187, 13, 121);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background-color: rgb(187, 13, 121);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.navbar-menu .phone-button a {
+  width: 100%;
+  font-size: 17px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  word-spacing: 1px;
+}
+.navbar-menu .phone-button:hover {
+  background-color: white;
+}
+.navbar-menu .phone-button:hover a {
+  color: rgb(187, 13, 121);
+}
+.navbar-menu .list-social {
+  margin-left: 25px;
+}
+.navbar-menu .list-social a {
+  margin: 0 10px;
+  color: #181818;
+  transition: all 0.2s;
+}
+.navbar-menu .list-social a:hover {
+  color: rgb(187, 13, 121);
+}
+
+#crs .background-before {
+  background-image: url(./../../images/yellow_top_wave_01.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 15rem;
+}
+#crs .background-after {
+  background-image: url(./../../images/Violet_top_left_wave.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 16rem;
+}
+#crs .carousel_content {
+  margin: 0 8rem;
+  height: 30rem;
+}
+#crs .carousel_content .carousel-left {
+  display: flex;
+  align-items: center;
+}
+#crs .carousel_content .carousel-left h3 {
+  color: rgb(187, 13, 121);
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+}
+#crs .carousel_content .carousel-left h1 {
+  font-size: 80px;
+  font-weight: 700;
+}
+#crs .carousel_content .carousel-right img {
+  height: 130%;
+}
+
+#card-general {
+  padding: 2rem 10rem;
+  background-color: #dcd1f3;
+  background-image: url(./../../images/Wave_White_bottom_right_shape_01.png);
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#card-general .card {
+  margin-top: 2rem;
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+#card-general .card .card-content {
+  border: 1px solid transparent;
+  border-radius: 20px;
+  overflow: hidden;
+}
+#card-general .card .card-content .card-body {
+  background-color: white;
+  text-align: center;
+  font-size: 1.2rem;
+}
+#card-general .card .card-content .card-body h5 {
+  color: #b61984;
+}
+#card-general .card .card-content .card-body h3 {
+  font-weight: 700;
+}
+#card-general .card .card-content:hover {
+  box-shadow: 5px 10px 18px #888888;
+}
+
+#course {
+  background-image: url(./../../images/accent_bottom_wave_01.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+}
+#course .findYourCourse {
+  margin: 0 16rem;
+  display: flex;
+  align-items: center;
+}
+#course .findYourCourse .course-left img {
+  width: 100%;
+}
+#course .findYourCourse .course-right form {
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  text-align: center;
+  width: 80%;
+  padding: 5rem 0;
+  box-shadow: 2px 10px 20px #888888;
+}
+#course .findYourCourse .course-right form label {
+  font-size: 50px;
+  font-weight: 700;
+}
+#course .findYourCourse .course-right form .name-course {
+  border-radius: 20px;
+  padding: 0.5rem;
+  border-style: none;
+  border: 1px solid #888888;
+  margin: 1rem 0.3rem;
+}
+#course .findYourCourse .course-right form .email-course {
+  border-radius: 20px;
+  padding: 0.5rem;
+  border-style: none;
+  border: 1px solid #888888;
+  margin: 1rem 0.3rem;
+}
+#course .findYourCourse .course-right form .english-course {
+  border-radius: 20px;
+  padding: 0.5rem;
+  border-style: none;
+  border: 1px solid #888888;
+  margin: 1rem 0.3rem;
+  width: 83%;
+}
+#course .findYourCourse .course-right form #message-course {
+  border-radius: 20px;
+  padding: 0.5rem;
+  border-style: none;
+  border: 1px solid #888888;
+  margin: 1rem 0.3rem;
+  width: 83%;
+}
+#course .findYourCourse .course-right form .button-course {
+  border-style: none;
+  border: 1px solid transparent;
+  background-color: rgb(187, 13, 121);
+  padding: 1rem 3rem;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  align-items: left;
+  transition: all 0.5s;
+}
+#course .findYourCourse .course-right form .button-course:hover {
+  background-color: white;
+  border: 1px solid rgb(187, 13, 121);
+  color: rgb(187, 13, 121);
+}
+
+footer {
+  background-image: url(./../../images/footer_background.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 40rem;
+}
+footer .footer_content {
+  width: 90%;
+  padding: 4rem;
+  margin: 0 auto;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+footer .footer_content .content h3 {
+  color: white;
+  font-weight: 700;
+}
+footer .footer_content .content ul {
+  list-style: none;
+}
+footer .footer_content .content ul hr {
+  width: 30%;
+}
+footer .footer_content .content ul li {
+  font-size: 18px;
+  color: white;
+  line-height: 35px;
+}
+footer .footer_content .content ul li a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: white;
+}
+footer .footer_content .content ul li a i {
+  color: white;
+}
+footer .footer_content .content form .your-email {
+  border-style: none;
+  border: 1px solid #888888;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  background-color: rgb(187, 13, 121);
+  margin-bottom: 1rem;
+}
+footer .footer_content .content form .email-button {
+  border-style: none;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  background-color: white;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  width: 72%;
+}/*# sourceMappingURL=style.css.map */
